@@ -17,8 +17,10 @@ def encod(text):
 
 if len(sys.argv) <= 2:
 	print('Usage : dec2ascii [-d][-e] "string_sequency"')
+	print('  Obs : in decode [-d] option is necessary separate integer values with spaces')
 else:
 	if(sys.argv[1] == "-d"):
+		#for decode option is necessary separate integer values with spaces
 		print decod(sys.argv[2].split(" "))
 	if(sys.argv[1] == "-e"):
 		print encod(sys.argv[2])
