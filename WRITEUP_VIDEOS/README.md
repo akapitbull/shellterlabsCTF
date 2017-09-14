@@ -1,3 +1,3 @@
 #youtubeChannel
 
-<a href="youtube.com/user/sqleto1">https://www.youtube.com/playlist</a>
+https://www.youtube.com/playlist?list=PLlq-hlhs91wqtRtIgQRxmqvgqTDZn6Qhu
