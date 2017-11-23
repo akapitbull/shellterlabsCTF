@@ -1,4 +1,4 @@
-# shellterlabsCTF
+# ShellterlabsCTF
   Repository of Capture The Flag (CTF) challenge resolutions, proposed on the shellterlabs.com portal, where each challenge involves one or more techniques that together make up 'The World' of Information Security.
 The challenges include categories such as:
 - Encryption,
@@ -9,6 +9,8 @@ The challenges include categories such as:
 - Reverse engineering,
 - Analysis & Forensic Skills,
 - etc...
+
+Twitter : https://twitter.com/sqleto
   
 
 
