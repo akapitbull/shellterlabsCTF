@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #By Sql3t0
 # This text was edited from http://invpy.com/vigenereCipher.py
 import sys
