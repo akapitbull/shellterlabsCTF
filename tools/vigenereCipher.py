@@ -9,7 +9,7 @@ def main():
     if len(sys.argv) < 4 :
 	print('Usage : script.py "[-d]or[-e]" "key" "text" ')
     else:
-	    myMode = sys.argv[1]
+	myMode = sys.argv[1]
         myKey = sys.argv[2]
         myMessage = sys.argv[3]
 	
