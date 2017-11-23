@@ -1,5 +1,5 @@
 # ShellterlabsCTF
-  Repository of Capture The Flag (CTF) challenge resolutions, proposed on the shellterlabs.com portal, where each challenge involves one or more techniques that together make up 'The World' of Information Security.
+  Repository of Capture The Flag (CTF) challenge resolutions, proposed on the https://shellterlabs.com portal, where each challenge involves one or more techniques that together make up 'The World' of Information Security.
 The challenges include categories such as:
 - Encryption,
 - Steganography,
