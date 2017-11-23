@@ -11,7 +11,7 @@ The challenges include categories such as:
 - etc...
 
 Twitter : https://twitter.com/sqleto
-  
+youtube : https://www.youtube.com/playlist?list=PLlq-hlhs91wqtRtIgQRxmqvgqTDZn6Qhu  
 
 
 
