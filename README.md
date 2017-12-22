@@ -5,7 +5,7 @@ The challenges include categories such as:
 - Steganography,
 - Bruteforce,
 - SQL Injection,
-- WEB EXPLOITATION,
+- Web Exploitation,
 - Reverse engineering,
 - Analysis & Forensic Skills,
 - etc...
