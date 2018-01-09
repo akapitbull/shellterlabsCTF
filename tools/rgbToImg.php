@@ -20,7 +20,7 @@ if(!empty($argv[1])){
 	}
 	echo '</div>';
 }else{
-	echo "Usage: php script.php file_name.txt > outFile.html";
+	echo "Usage: php script.php file_name.txt > outFile.html \n";
 }
 
 ?>
