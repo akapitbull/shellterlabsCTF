@@ -5,6 +5,9 @@ import optparse
 import codecs
 import sys
 
+__author__ = 'Lukasz Banasiak <lukasz@banasiak.me>'
+__version__ = '1.1'
+
 def atbash(words, mode=0):
     """AtBash cipher.
 
