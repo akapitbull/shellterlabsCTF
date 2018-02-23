@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# chmod +x bin2ascii.py && mov bin2ascii.py bin2ascii && mv bin2ascii /usr/bin
 import sys
 
 if len(sys.argv) > 1:
