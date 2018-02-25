@@ -10,7 +10,7 @@ g = 483905			  # public integer number
 A = 38289573795047443088133899    # public key Alice
 # B = (g ** b) % p
 B = 27036552164913867986554244    # public key Bob
-i=30000 
+#i=30000 
 while i <= 100000:
 	secret = ((g**i) % p)
 	sys.stdout.write('\r['+str(i)+'] '+str(secret))
