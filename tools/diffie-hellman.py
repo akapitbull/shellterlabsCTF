@@ -4,8 +4,8 @@
 import sys
 
 enc = 73851709625569149303392944  # cihper text
-p = 131231564657789987221314359 # public prime number  
-g = 483905						# public integer number
+p = 131231564657789987221314359   # public prime number  
+g = 483905			  # public integer number
 # A = (g ** a) % p
 A = 38289573795047443088133899 
 # B = (g ** b) % p
