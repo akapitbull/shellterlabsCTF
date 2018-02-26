@@ -8,7 +8,7 @@ else
 	printf '\n'
 	while read p
 	do 
-		printf "\r Senha: $p                                                           ";
+		printf "\r Senha: $p                                                           "
 		if echo $p | cryptsetup luksOpen $1 luks_decrypted_file  2>&1 | wc -l | grep '0'
 		then
 			echo "[+]Passwd FOUND : $p";
