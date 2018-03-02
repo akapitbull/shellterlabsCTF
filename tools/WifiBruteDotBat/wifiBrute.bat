@@ -1,6 +1,6 @@
 @ECHO off
 ECHO ------------------------------
-ECHO - WifiBruteforce VIVO (byJJ) -
+ECHO - WifiBruteforce (bySql3t0) -
 ECHO ------------------------------ 
 
 REM SET nome=HELCO
