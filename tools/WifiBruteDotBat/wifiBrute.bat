@@ -3,7 +3,7 @@ ECHO ------------------------------
 ECHO - WifiBruteforce (bySql3t0) -
 ECHO ------------------------------ 
 
-REM SET nome=HELCO
+REM SET nome=GVT-A123
 SET /p nome="Entre com o Nome do Ponto de Acesso : "
 REM SET /p compS="Entre com os 4 ultimos digitos do nome do ponto de acesso : "
 
