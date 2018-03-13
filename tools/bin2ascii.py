@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Sql3t0
 # chmod +x bin2ascii.py && mov bin2ascii.py bin2ascii && mv bin2ascii /usr/bin
 import sys
 
