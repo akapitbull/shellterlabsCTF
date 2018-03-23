@@ -1,7 +1,6 @@
 #!/usr/bin/python
 #By Sql3t0
 from pwn import *
-import sy
 
 sr = remote('158.69.192.239', 1337)
 print r.recv(2048)
