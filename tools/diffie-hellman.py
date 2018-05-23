@@ -26,6 +26,6 @@ while i <= 100000:
 		break	
 	i += 1
 
-print('RSA-key: '+str(s))
+print('RSA-key[S]: '+str(s))
 flag_hex = format(s ^ enc, 'x')
 print("Flag: Hackaflag{" + flag_hex.decode("hex") + "}")
