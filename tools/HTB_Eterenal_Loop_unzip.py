@@ -1,6 +1,5 @@
 from zipfile import ZipFile
 
-
 def getInternalName(zipName):
 	with ZipFile(zipName, 'r') as f:
 		names = f.namelist()
@@ -12,7 +11,7 @@ def unzip(zipName,passwd):
 	with ZipFile(zip_file) as zf:
   		zf.extractall(pwd=bytes(password))
 
-zip_file = 'hackthebox.zip'
+zip_file = 'Eternal_Loop.zip'
 password = 'hackthebox'
 while True:
 	print zip_file + ' | ' + password 
