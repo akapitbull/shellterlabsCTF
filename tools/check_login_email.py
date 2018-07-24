@@ -5,8 +5,8 @@
 # style from lines in file to read
 # e.g:
 # 	  filename.txt
-#		email1@gmail.com;senha1
-#		email1@yahoo.com;senha2
+#		email1@gmail.com;password1
+#		email1@yahoo.com;password2
 #		continue...
 #
 # Usage: python scriptname.py filename.txt
