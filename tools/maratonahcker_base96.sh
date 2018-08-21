@@ -1,0 +1,1 @@
+t=$(cat base96) && while true; do t=$(echo $t | base64 -d -i | base64 -d -i | base64 -d -i | base64 -d -i | base64 -d -i | base64 -d -i | base64 -d -i | base32 -d -i | base64 -d -i | base64 -d -i);if echo $t | egrep "mHacker\{.*\}";then break;fi;done
